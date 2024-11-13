@@ -170,12 +170,12 @@ void Timers_Init(Timer_Config* Timer1Config)
 	if(Timer1Config->TIM_Num==TIMER1)
 	{
 		RCC_PerClock_State(APB2 ,11 ,PClock_enable );   								//enable timer1 clock
-		Timer_Num[Timer1Config->TIM_Num]->ARR=0xffff;							//Because timer1 is used for ultrasonic sensor
+									
 	}
 	else if(Timer1Config->TIM_Num==TIMER2)
 	{
 		RCC_PerClock_State(APB1 ,0 ,PClock_enable );  							// enable timer2 clock
-		Timer_Num[Timer1Config->TIM_Num]->ARR=40;								//because timer2 is for motors
+									
 	}
 	Timer_Num[Timer1Config->TIM_Num]->PSC=7;							//time base = 1us because frequency internal 8Mhz 											  					 //time base =1ms
 	//Timer_Num[Timer1Config->TIM_Num]->ARR=40;
