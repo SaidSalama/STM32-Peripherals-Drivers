@@ -320,32 +320,6 @@ void Timers_Init(Timer_Config* Timer1Config)
 
 
 
-/********************MOTOR CONTROL***************/
-/*RCC_Init();
-RCC_PerClock_State(APB2, IOPA_PERIPHERAL, PClock_enable);
-DIO_PinMode(GPIOA, 0, OUTPUT_SPEED_10MHZ_PP);
-DIO_PinMode(GPIOA, 1, OUTPUT_SPEED_10MHZ_PP);
-DIO_PinMode(GPIOA, 8, OUTPUT_SPEED_10MHZ_AFPP);
-DIO_PinMode(GPIOA, 9, OUTPUT_SPEED_10MHZ_AFPP);
-DIO_PinMode(GPIOA, 15, OUTPUT_SPEED_10MHZ_AFPP);
 
-DIO_PinWrite(GPIOA, 0, GPIO_HIGH);*/
-/* Timer_Config T;
-
- 	T.TIM_Num=TIMER2;
- 	T.Auto_Reload_Preload=TIMER_ENABLE;
- 	T.Counter_Direction=Upcounter;
- 	T.Center_Aligned_mode=Edge_Aligned_mode;
- 	T.Ch1=CH_Used;
- 	T.Ch2=CH_Not_Used;
- 	T.Ch3=CH_Not_Used;
- 	T.Ch4=CH_Not_Used;
- 	T.Ch1_Capture_Compare_Interrupt=TIMER_DISABLE;
- 	T.Ch1_Dir=Output;
- 	T.Ch1_OutputCompare_Preload=TIMER_ENABLE;
- 	T.Ch1_Output_Compare_mode=PWMmode1;
- 	T.Ch1_Polarity=Ch_Active_High;
-
- 	Timers_Init(&T);*/
 
 
